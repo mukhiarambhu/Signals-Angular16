@@ -3,6 +3,10 @@
 <div>DoubleCount:{{double()}}</div>
 <div>{{conditionalCount()}}</div>
 
+<div>List of Task</div>
+<li *ngFor="let todo of todos()">{{todo.title}}</li>
+
 <button (click)="Increase()">Increase</button>
 <button (click)="Decrease()">Decrease</button>
 <button (click)="reset()">Reset</button>
+<button (click)="addTask()">ADD TASK</button>
